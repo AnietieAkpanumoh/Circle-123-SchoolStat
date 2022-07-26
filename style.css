@@ -309,3 +309,42 @@ main .instructors .legend table {
 }
 
 
+
+/*-------------------------------- LEFT SIDEBAR -----------------------------*/
+aside {
+  margin-left: 1.8rem;
+  height: 100vh;
+  width: 14rem;
+  /* border: 1px solid red; */
+}
+
+aside .aside-top {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+
+.schoolstat-span {
+  color: var(--color-danger);
+}
+
+aside .logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+aside .logo {
+  display: flex;
+  gap: 1rem;
+}
+
+/*-------------------------------- END OF SIDEBAR ----------------------------*/
+
+
+
+
+
+/* /*---------------- RIGHT SIDE  -----------------------*/
+
