@@ -145,3 +145,167 @@ b {
 .warning {
     color: var(--color-warning);
 }
+
+
+
+
+
+
+/*---------------- MAIN DASHBOARD  -----------------------*/
+main {
+    margin-top: 1.4rem;
+}
+
+/* COURSE INSIGHTS  */
+main .course-insights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+main .course-insights > div {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius-);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .course-insights > div:hover{
+    box-shadow: none;
+  transform: scale(1.1);
+}
+
+main .course-insights > div span {
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+main .course-insights > div.backend span {
+    background: var(--color-danger);
+}
+
+main .course-insights > div.cloud span {
+    background: var(--color-success);
+}
+
+main .course-insights > div .middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .course-insights h3 {
+  margin: 1rem 0 0.6rem;
+  font-size: 1rem;
+}
+
+main .cours-insights .progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+main .course-insights svg {
+  width: 7rem;
+  height: 7rem;
+}
+
+main .course-insights svg circle {
+    fill:none;
+    stroke: var(--color-primary);
+    stroke-width: 14px;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+  stroke-dasharray: 200;
+    stroke-dashoffset: -30;
+}
+
+main .course-insights .frontend svg circle {
+   stroke-dasharray: 120;
+    stroke-dashoffset: -60;
+}
+
+main .course-insights .backend svg circle {
+/*     stroke-dasharray: 110;
+    stroke-dashoffset: 92; */
+   stroke-dasharray: 80;
+    stroke-dashoffset: 20;
+}
+
+main .course-insights .cloud svg circle {
+/*     stroke-dasharray: 170;
+    stroke-dashoffset: -250; */
+    stroke-dasharray: 110;
+    stroke-dashoffset: 35;
+}
+
+main .course-insights .progress .number {
+   display: flex; 
+    justify-content: center;
+    align-items: center;  
+  position: relative;  
+/*     z-index: 1; */
+    top: -65px;
+    left: -5px;
+    height:100%;
+    width: 100%;
+   
+}
+
+/* Instructors  */
+
+main .instructors {
+    margin-top: 4rem;
+}
+
+main .instructors h2 {
+  margin-bottom: 0.8rem;
+}
+
+main .instructors table {
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius-);
+    padding:var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .instructors table:hover {
+    box-shadow: none;
+  transform: scale(1.1);
+}
+
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light); 
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+main .instructors a {
+    text-align: center;
+    display: block;
+    margin: 3rem auto;
+    color: var(--color-primary);
+}
+
+main .instructors .legend {
+  margin: 4rem 0;
+}
+
+main .instructors .legend table {
+  border: 2px dashed var(--color-primary);
+}
+
+
