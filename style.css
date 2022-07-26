@@ -312,10 +312,12 @@ main .instructors .legend table {
 
 /*-------------------------------- LEFT SIDEBAR -----------------------------*/
 aside {
-  margin-left: 1.8rem;
   height: 100vh;
-  width: 14rem;
-  /* border: 1px solid red; */
+  width: 11rem;
+}
+
+aside .close {
+  display: none;
 }
 
 aside .aside-top {
@@ -338,6 +340,56 @@ aside .logo img {
 aside .logo {
   display: flex;
   gap: 1rem;
+}
+
+aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+}
+
+aside h3 {
+  font-weight: 500;
+}
+
+aside .sidebar a {
+  display: flex;
+  color: var(--color-info-dark);
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a span {
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+
+aside .sidebar a:hover {
+  color: var(--color-primary);
+}
+
+aside .sidebar a:hover span {
+  margin-left: 1rem;
+}
+
+aside .sidebar .message-count {
+  background: var(--color-danger);
+  color: var(--color-white);
+  padding: 2px 8px;
+  font-size: 11px;
+  border-radius: var(--border-radius-1);
 }
 
 /*-------------------------------- END OF SIDEBAR ----------------------------*/
