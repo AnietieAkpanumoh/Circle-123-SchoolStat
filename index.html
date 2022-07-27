@@ -1,313 +1,353 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Stat</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Stat</title>
 
   <!-- MATERIAL Icons CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class ="container">
-<!--============================= TOP OF SIDEBAR   ===========================-->
+  <div class="container">
+    <!--============================= TOP OF SIDEBAR   ===========================-->
     <aside>
-       <div class="aside-top">
-          <div class="logo">
-            <img src="images/Altlogo.png" alt="">
-            <h2>School<span class="schoolstat-span">Stat</span></h2>
-          </div>
-          <div class="close" id="close-btn">
-            <span class="material-icons-sharp">close</span>
-          </div>
+      <div class="aside-top">
+        <div class="logo">
+          <img src="images/Altlogo.png" alt="">
+          <h2>School<span class="schoolstat-span">Stat</span></h2>
         </div>
-<!--=========================== MAIN SIDEBAR ============================= -->
-        <div class="sidebar">
-
-           <a href="#">
-              <span class="material-icons-sharp">grid_view</span>
-              <h3>Dashboard</h3>
-           </a>
-
-           <a href="#">
-              <span class="material-icons-sharp">account_circle</span>
-              <h3>Instructors</h3>
-           </a>
-
-           <a href="#"><span class="material-icons-sharp">email</span>
-            <h3>Messages</h3>
-            <span class="message-count">26</span>
-           </a>
-
-           <a href="#">
-              <span class="material-icons-sharp">people</span>
-              <h3>Students</h3>
-           </a>
-
-           <a href="#">
-              <span class="material-icons-sharp">menu_book</span>
-              <h3>Courses</h3>
-           </a>
-
-           <a href="#">
-              <span class="material-icons-sharp">local_library</span>
-              <h3>Exams</h3>
-           </a>
-
-           <a href="#">
-              <span class="material-icons-sharp">quiz</span>
-              <h3>Test</h3>
-           </a>
-
-           <a href="#">
-              <span class="material-icons-sharp">description</span>
-              <h3>Attendance</h3>
-           </a>
-
-           <a href="#">
-              <span class="material-icons-sharp">logout</span>
-              <h3>Logout</h3>
-           </a>
-
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
         </div>
+      </div>
+      <!--=========================== MAIN SIDEBAR ============================= -->
+      <div class="sidebar">
+
+        <a href="#">
+          <span class="material-icons-sharp">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+
+        <a href="#">
+          <span class="material-icons-sharp">account_circle</span>
+          <h3>Instructors</h3>
+        </a>
+
+        <a href="#"><span class="material-icons-sharp">email</span>
+          <h3>Messages</h3>
+          <span class="message-count">26</span>
+        </a>
+
+        <a href="#">
+          <span class="material-icons-sharp">people</span>
+          <h3>Students</h3>
+        </a>
+
+        <a href="#">
+          <span class="material-icons-sharp">menu_book</span>
+          <h3>Courses</h3>
+        </a>
+
+        <a href="#">
+          <span class="material-icons-sharp">local_library</span>
+          <h3>Exams</h3>
+        </a>
+
+        <a href="#">
+          <span class="material-icons-sharp">quiz</span>
+          <h3>Test</h3>
+        </a>
+
+        <a href="#">
+          <span class="material-icons-sharp">description</span>
+          <h3>Attendance</h3>
+        </a>
+
+        <a href="#">
+          <span class="material-icons-sharp">logout</span>
+          <h3>Logout</h3>
+        </a>
+
+      </div>
     </aside>
 
 
-<!-- MAIN DASHBOARD  -->
-      <main>
+    <!-- MAIN DASHBOARD  -->
+    <main>
       <h1>Dashboard</h1>
-        <div class="course-insights">
-<!--================== FRONTEND =======================-->
-          <div class="frontend">
-            <span class="material-icons-sharp">laptop_windows</span>
+      <div class="course-insights">
+        <!--================== FRONTEND =======================-->
+        <div class="frontend">
+          <span class="material-icons-sharp">laptop_windows</span>
 
-            <div class="middle">
-              <div class="left">
-                <h3>Frontend</h3>
-                <h1>1000 Students</h1>
+          <div class="middle">
+            <div class="left">
+              <h3>Frontend</h3>
+              <h1>1000 Students</h1>
+            </div>
+
+            <div class="progress">
+              <svg>
+                <circle cx='38' cy='38' r='36'> </circle>
+              </svg>
+              <div class="number">
+                <p>45%</p>
               </div>
-
-              <div class="progress">
-                    <svg>
-                        <circle cx='38' cy ='38' r='36'> </circle>
-                    </svg>
-                    <div class="number">
-                        <p>45%</p>
-                    </div>
             </div>
+          </div>
+          <small class="text-muted">21/22 SESSION</small>
+        </div>
+
+        <!--============== BACKEND ====================-->
+
+        <div class="backend">
+          <span class="material-icons-sharp">developer_board</span>
+
+          <div class="middle">
+            <div class="left">
+              <h3>Backend</h3>
+              <h1>700 Students</h1>
             </div>
-            <small class="text-muted">21/22 SESSION</small>
+
+            <div class="progress">
+              <svg>
+                <circle cx='38' cy='38' r='36'> </circle>
+              </svg>
+              <div class="number">
+                <p>32%</p>
+              </div>
+            </div>
           </div>
+          <small class="text-muted">21/22 SESSION</small>
+        </div>
+        <!--============== CLOUD ====================-->
+        <div class="cloud">
+          <span class="material-icons-sharp"> cloud_done</span>
 
-         <!--============== BACKEND ====================-->
+          <div class="middle">
+            <div class="left">
+              <h3>CLOUD</h3>
+              <h1>500 Students</h1>
+            </div>
 
-            <div class="backend">
-              <span class="material-icons-sharp">developer_board</span>
-
-                <div class="middle">
-                  <div class="left">
-                    <h3>Backend</h3>
-                    <h1>700 Students</h1>
-                  </div>
-
-                    <div class="progress">
-                    <svg>
-                        <circle cx='38' cy ='38' r='36'> </circle>
-                    </svg>
-                    <div class="number">
-                        <p>32%</p>
-                    </div>
-            </div>   
+            <div class="progress">
+              <svg>
+                <circle cx='38' cy='38' r='36'> </circle>
+              </svg>
+              <div class="number">
+                <p>23%</p>
+              </div>
+            </div>
           </div>
-              <small class="text-muted">21/22 SESSION</small>
-          </div>
- <!--============== CLOUD ====================-->                 
-          <div class="cloud">
-              <span class="material-icons-sharp"> cloud_done</span>
+          <small class="text-muted">21/22 SESSION</small>
+        </div>
+      </div>
 
-                <div class="middle">
-                  <div class="left">
-                    <h3>CLOUD</h3>
-                    <h1>500 Students</h1>
-                  </div>
-
-                    <div class="progress">
-                    <svg>
-                        <circle cx='38' cy ='38' r='36'> </circle>
-                    </svg>
-                    <div class="number">
-                        <p>23%</p>
-                    </div>
-            </div>   
-          </div>
-            <small class="text-muted">21/22 SESSION</small>
-          </div>
-</div>
-
-<div class="instructors">
-  <h2>Instructor Data</h2>
-<!--     Table      -->
-    <table>
-    <thead>
-      <tr>
-        <th>Instructor Name</th>
-        <th>Serial Number</th>
-        <th>Course Code</th>
-        <th></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Rising</td>
-        <td>ALT-001</td>
-        <td>FEE, BEE, CLE</td>
-        <td></td>      
-      </tr>
-
-       <tr>
-        <td>Setemi</td>
-        <td>ALT-002</td>
-        <td>FEE, BEE</td>
-        <td></td>      
-      </tr>
-
-       <tr>
-        <td>Charles</td>
-        <td>ALT-003</td>
-        <td>CLE</td>
-        <td></td>      
-      </tr>
-
-       <tr>
-        <td>Desmond</td>
-        <td>ALT-004</td>
-        <td>BEE</td>
-        <td></td>      
-      </tr> 
-
-      <tr>
-        <td>Jerry</td>
-        <td>ALT-005</td>
-        <td>FEE, CLE</td>
-        <td></td>      
-      </tr> 
-
-      <tr>
-        <td>Tabitha</td>
-        <td>ALT-006</td>
-        <td>BEE, CLE</td>
-        <td></td>      
-      </tr> 
-
-      <tr>
-        <td>Rukevwe</td>
-        <td>ALT-007</td>
-        <td>FEE</td>
-        <td></td>      
-      </tr> 
-
-      <tr>
-        <td>Hack Sultan</td>
-        <td>ALT-008</td>
-        <td>FEE, BEE, CLE</td>
-        <td></td>      
-      </tr> 
-
-      
-    </tbody>
-  </table>
-
-  <div class="legend">
-      <h2>Course Codes</h2>
+      <div class="instructors">
+        <h2>Instructor Data</h2>
+        <!--     Table      -->
         <table>
-    <thead>
-      <tr>
-        <th>Course Code</th>
-        <th>Course Name</th>
-      </tr>
-    </thead>
+          <thead>
+            <tr>
+              <th>Instructor Name</th>
+              <th>Serial Number</th>
+              <th>Course Code</th>
+              <th></th>
+            </tr>
+          </thead>
 
           <tbody>
-      <tr>
-        <td>FEE</td>
-        <td>Front-End Engineering</td>  
-      </tr>
+            <tr>
+              <td>Rising</td>
+              <td>ALT-001</td>
+              <td>FEE, BEE, CLE</td>
+              <td></td>
+            </tr>
 
             <tr>
-        <td>BEE</td>
-        <td>Back-End Engineering</td>  
-      </tr>
+              <td>Setemi</td>
+              <td>ALT-002</td>
+              <td>FEE, BEE</td>
+              <td></td>
+            </tr>
 
-      <tr>
-        <td>CLE</td>
-        <td>Cloud Engineering</td>  
-      </tr>
+            <tr>
+              <td>Charles</td>
+              <td>ALT-003</td>
+              <td>CLE</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Desmond</td>
+              <td>ALT-004</td>
+              <td>BEE</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Jerry</td>
+              <td>ALT-005</td>
+              <td>FEE, CLE</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Tabitha</td>
+              <td>ALT-006</td>
+              <td>BEE, CLE</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Rukevwe</td>
+              <td>ALT-007</td>
+              <td>FEE</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Hack Sultan</td>
+              <td>ALT-008</td>
+              <td>FEE, BEE, CLE</td>
+              <td></td>
+            </tr>
+
+
           </tbody>
         </table>
-    </div>
- 
-    
-  
-<a href="#" id="show-all">Show All</a>
-</div>      
-      </main>
 
-<!-- RIGHT SIDE  -->
-      <div class="right-side">
-        <div class="top">
-          <button id="menu-btn">
-            <span class="material-icons-sharp">menu</span>
-          </button>
-          <div class="theme-toggler">
-            <span class="material-icons-sharp">light_mode</span>
-            <span class="material-icons-sharp">dark_mode</span>
-          </div>
-          <div class="profile">
-            <div class="info">
-              <P>Hey, <b>Jerry</b></P>
-              <small class="text-muted">Admin</small>
-            </div>
-            <div class="profile-photo">
-              <img src="images/hesam-link-Ug5MRUtcYgk-unsplash.jpg" alt="">
-            </div>
-            
-          </div>
+        <div class="legend">
+          <h2>Course Codes</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>FEE</td>
+                <td>Front-End Engineering</td>
+              </tr>
+
+              <tr>
+                <td>BEE</td>
+                <td>Back-End Engineering</td>
+              </tr>
+
+              <tr>
+                <td>CLE</td>
+                <td>Cloud Engineering</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <!-- END OF TOP -->
-        
-        <div class="recent-updates">
-          <h2>Recent Updates</h2>
-          <div class="updates">
-            <div class="update">
-              <div class="profile-photo">
-                <img src="" alt="">
-              </div>
-              <div class="message">
-                <p><b>Minimun Age</b> - 12 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
+
+
+
+        <a href="#" id="show-all">Show All</a>
       </div>
-              
-            
+    </main>
 
-        
+    <!-- RIGHT SIDE  -->
+    <div class="right-side">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-icons-sharp active">light_mode</span>
+          <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <P>Hey, <b>Jerry</b></P>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="images/hesam-link-Ug5MRUtcYgk-unsplash.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+      <!----- END OF TOP ------>
+
+      <div class="recent-updates">
+        <h2>Age Statistics</h2>
+        <div class="updates">
+          <div class="update">
+            <div class="message">
+              <p><b>Minimun Age</b> - 13 years </p>
+            </div>
+          </div>
+          <div class="update">
+            <div class="message">
+              <p><b>Maximum Age</b> - 45 years</p>
+            </div>
+          </div>
+          <div class="update">
+            <div class="message">
+              <p><b>Average Age</b> - 20 years</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----  END OF AVERAGE AGE ----->
+      <div class="gender-statistics">
+        <h2>Gender Statistics</h2>
+        <div class="item">
+          <span class="material-icons-sharp">
+            man
+          </span>
+          <div class="right">
+            <h3>1090</h3>
+          </div>
+        </div>
+        <div class="gender-analytics">
+          <div class="item">
+            <span class="material-icons-sharp">
+              woman
+            </span>
+            <div class="right">
+              <h3>1100</h3>
+            </div>
+          </div>
+          <div class="gender-analytics">
+            <div class="item">
+              <span class="material-icons-sharp">
+                transgender
+              </span>
+              <div class="right">
+                <h3>10</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
 
 
 
 
 
- 
-    </div>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+
+
+
+
+
+      </div>
+      <!-- // ============= EEND DO NOT EDIT ============== // -->
+      <script src="index.mjs" type="module"></script>
+      <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>

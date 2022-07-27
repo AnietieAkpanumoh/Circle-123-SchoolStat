@@ -397,5 +397,137 @@ aside .sidebar .message-count {
 
 
 
-/* /*---------------- RIGHT SIDE  -----------------------*/
+ /*---------------- RIGHT SIDE  -----------------------*/
+.right-side{
+  margin-top: 0.5rem;
+}
+
+.right-side .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.right-side .top button{
+  display: none;
+}
+
+.right-side .theme-toggler{
+  background: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+
+.right-side .theme-toggler span{
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side .theme-toggler span.active{
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+
+.right-side .top .profile{
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+}
+
+ /*---------------- AGE STATISTICS  -----------------------*/
+.right-side .recent-updates{
+  margin-top: 0.5rem;
+}
+
+.right-side .recent-updates h2{
+  margin-bottom: 0.3rem;
+}
+
+.right-side .recent-updates .updates{
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius-);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.right-side .recent-updates .updates:hover{
+  box-shadow: none;
+}
+
+.right-side .recent-updates .updates .update{
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+ /*---------------- GENDER STATISTICS  -----------------------*/
+.right-side .gender-statistics{
+  margin-top: 9rem;
+}
+
+.right-side .gender-statistics h2{
+  margin-bottom: 0.8rem;
+}
+
+.right-side .gender-statistics .item{
+  background: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem var(--card-padding);
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow);
+  transition: ll 300ms ease;
+}
+
+.right-side .gender-statistics .item:hover{
+  box-shadow: none;
+}
+
+.right-side .gender-analytics .item{
+  background: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem var(--card-padding);
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow);
+  transition: ll 300ms ease;
+}
+
+.right-side .gender-analytics .item:hover{
+  box-shadow: none;
+}
+
+.right-side .gender-analytics .material-icons-sharp {
+  padding: 0.6rem;
+  color: var(--color-white);
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+}
+
+.right-side .gender-statistics .material-icons-sharp{
+  padding: 0.6rem;
+  color: var(--color-white);
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+}
+
+ /*---------------- END OF RIGHT SIDE  -----------------------*/
 
