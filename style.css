@@ -70,7 +70,7 @@ body {
     width: 96%;
     margin: 0 auto;
     gap: 1.5rem;
-    grid-template-columns: 13rem auto 21rem; 
+    grid-template-columns: 13rem auto 17rem; 
 /*   Divided the container into a grid with 3 columns - the left dashboard, the main dashboard & the right side */
 }
 
@@ -268,6 +268,46 @@ main .instructors h2 {
   margin-bottom: 0.8rem;
 }
 
+main .instructors input {
+  margin-bottom: 2rem;
+  width: 40%;
+}
+
+#search {
+  border: 1px solid grey;
+    border-radius: 5px;
+    height: 30px;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+    transition: all 300ms ease;
+}
+
+#search:hover, #search:focus {
+    border: 1.5px solid #009688;
+    background-color: white;
+  transform: scale(1.1);
+  }
+
+main .instructors .table-sortables th {
+  cursor: pointer;
+}
+
+main .instructors .table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+
+
 main .instructors table {
     background: var(--color-white);
     width: 100%;
@@ -399,7 +439,7 @@ aside .sidebar .message-count {
 
  /*---------------- RIGHT SIDE  -----------------------*/
 .right-side{
-  margin-top: 0.5rem;
+  margin-top: 1.4rem;
 }
 
 .right-side .top {
@@ -446,11 +486,11 @@ aside .sidebar .message-count {
 
  /*---------------- AGE STATISTICS  -----------------------*/
 .right-side .recent-updates{
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
 }
 
 .right-side .recent-updates h2{
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
 }
 
 .right-side .recent-updates .updates{
@@ -463,6 +503,7 @@ aside .sidebar .message-count {
 
 .right-side .recent-updates .updates:hover{
   box-shadow: none;
+  transform: scale(1.1);
 }
 
 .right-side .recent-updates .updates .update{
@@ -472,7 +513,7 @@ aside .sidebar .message-count {
 
  /*---------------- GENDER STATISTICS  -----------------------*/
 .right-side .gender-statistics{
-  margin-top: 9rem;
+  margin-top: 8rem;
 }
 
 .right-side .gender-statistics h2{
@@ -482,36 +523,37 @@ aside .sidebar .message-count {
 .right-side .gender-statistics .item{
   background: var(--color-white);
   display: flex;
-  justify-content: space-between;
+/*   justify-content: space-between; */
   align-items: center;
   gap: 1rem;
   margin-bottom: 0.7rem;
   padding: 1.4rem var(--card-padding);
   border-radius: var(--border-radius-3);
   box-shadow: var(--box-shadow);
-  transition: ll 300ms ease;
+  transition: all 300ms ease;
 }
 
 .right-side .gender-statistics .item:hover{
   box-shadow: none;
+  transform: scale(1.1);
 }
 
-.right-side .gender-analytics .item{
+/* .right-side .gender-analytics .item{
   background: var(--color-white);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 1rem;
   margin-bottom: 0.7rem;
   padding: 1.4rem var(--card-padding);
   border-radius: var(--border-radius-3);
   box-shadow: var(--box-shadow);
   transition: ll 300ms ease;
-}
+} */
 
-.right-side .gender-analytics .item:hover{
+/* .right-side .gender-analytics .item:hover{
   box-shadow: none;
-}
+} */
 
 .right-side .gender-analytics .material-icons-sharp {
   padding: 0.6rem;
@@ -531,3 +573,14 @@ aside .sidebar .message-count {
 
  /*---------------- END OF RIGHT SIDE  -----------------------*/
 
+
+ /*---------------- MEDIA QUERIES  -----------------------*/
+/* ====================== MEDIA QUERIES - Small Laptops & Big Tablets ======================== */
+@media screen and (max-width: 1200px) {
+  
+}
+
+/* ========================= MEDIA QUERIES - Mobile & Smaller Tablets ========================== */
+@media screen and (max-width: 768px) {
+
+}
