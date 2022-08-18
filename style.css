@@ -293,6 +293,8 @@ main .instructors .table-sortables th {
   cursor: pointer;
 }
 
+
+
 main .instructors .table-sortable .th-sort-asc::after {
   content: "\25b4";
 }
@@ -305,6 +307,7 @@ main .instructors .table-sortable .th-sort-asc::after {
 .table-sortable .th-sort-desc::after {
   margin-left: 5px;
 }
+
 
 
 
@@ -321,6 +324,10 @@ main .instructors table {
 main .instructors table:hover {
     box-shadow: none;
   transform: scale(1.1);
+}
+main table thead th::after {
+  content: "\002B";
+  margin-left: 5px;
 }
 
 main table tbody td {
